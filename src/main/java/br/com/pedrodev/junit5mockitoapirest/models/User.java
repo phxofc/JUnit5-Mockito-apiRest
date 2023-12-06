@@ -2,6 +2,7 @@ package br.com.pedrodev.junit5mockitoapirest.models;
 
 import br.com.pedrodev.junit5mockitoapirest.dtos.UserDTO;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

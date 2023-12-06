@@ -34,7 +34,7 @@ public class UserService {
     public UserDTO createUser(User user){
         User exists = userRepository.findByName(user.getName());
         if (exists != null) {
-            throw new Error("User already exists!");
+          //  throw new Error("User already exists!");
         }
         User createdUser = userRepository.save(user);
         UserDTO dto = new UserDTO(createdUser);
