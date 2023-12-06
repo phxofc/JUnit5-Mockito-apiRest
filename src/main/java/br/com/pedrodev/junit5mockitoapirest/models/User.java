@@ -1,5 +1,6 @@
 package br.com.pedrodev.junit5mockitoapirest.models;
 
+import br.com.pedrodev.junit5mockitoapirest.dtos.UserDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,5 +24,7 @@ public class User {
 
     public User(){
     }
+
+
 
 }
