@@ -1,0 +1,10 @@
+INSERT INTO tbl_user (name, email, password) VALUES ('John Doe', 'john.doe@example.com', '$2a$10$z/wrRrH71MU84amRjgFTIe.Kv7nFM5YZ4U99H8IN9VJUufBmOc0U6');
+INSERT INTO tbl_user (name, email, password) VALUES ('Jane Doe', 'jane.doe@example.com', '$2a$10$ABC123DEF456GHI789JKL0MNO123PQR456STU789VWX012YZ3');
+INSERT INTO tbl_user (name, email, password) VALUES ('Alice Smith', 'alice.smith@example.com', '$2a$10$XYZ456ABC789DEF012GHI345JKL678MNO901PQR234STU567');
+INSERT INTO tbl_user (name, email, password) VALUES ('Bob Johnson', 'bob.johnson@example.com', '$2a$10$123ABC456DEF789GHI012JKL345MNO678PQR901STU234VWX5');
+INSERT INTO tbl_user (name, email, password) VALUES ('Eva Williams', 'eva.williams@example.com', '$2a$10$678XYZ901ABC234DEF567GHI890JKL123MNO456PQR789STU0');
+INSERT INTO tbl_user (name, email, password) VALUES ('Chris Brown', 'chris.brown@example.com', '$2a$10$901VWX234YZ567ABC890DEF123GHI456JKL789MNO012PQR3');
+INSERT INTO tbl_user (name, email, password) VALUES ('Sophia Davis', 'sophia.davis@example.com', '$2a$10$456STU789VWX012YZ345ABC678DEF901GHI234JKL567MNO890');
+INSERT INTO tbl_user (name, email, password) VALUES ('David Miller', 'david.miller@example.com', '$2a$10$789PQR012STU345VWX678YZ901ABC234DEF567GHI890JKL1');
+INSERT INTO tbl_user (name, email, password) VALUES ('Olivia Wilson', 'olivia.wilson@example.com', '$2a$10$234MNO567PQR890STU012VWX345YZ678ABC901DEF234GHI5');
+INSERT INTO tbl_user (name, email, password) VALUES ('Michael Taylor', 'michael.taylor@example.com', '$2a$10$567JKL890MNO123PQR456STU789VWX012YZ3ABC4DEF5');
