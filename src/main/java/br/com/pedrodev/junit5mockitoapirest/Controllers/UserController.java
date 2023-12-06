@@ -6,10 +6,9 @@ import br.com.pedrodev.junit5mockitoapirest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -22,5 +21,31 @@ public class UserController {
         var findbyIdUser= userService.findById(id);
         return new ResponseEntity<UserDTO>(findbyIdUser,HttpStatus.OK);
     }
+
+    @GetMapping
+    public ResponseEntity<List<UserDTO>> findAll(){
+        List<UserDTO> findAllUser = userService.findAll();
+        return  new ResponseEntity<>(findAllUser, HttpStatus.OK);
+    }
+
+
+    @PostMapping(value = "/create")
+    public ResponseEntity<UserDTO> createUser(@RequestBody User user){
+        var created = userService.createUser(user);
+        return  new ResponseEntity<UserDTO>(created,HttpStatus.CREATED);
+    }
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity delete(@PathVariable Long id){
+        userService.delete(id);
+        return  new ResponseEntity<>("Deleted From Database",HttpStatus.OK);
+    }
+
+    @PutMapping(value = "/update")
+    public ResponseEntity<UserDTO> updateUser(@RequestBody User user){
+        var update = userService.UpdateUser(user);
+        return new ResponseEntity<>(update, HttpStatus.OK);
+    }
+
 
 }
