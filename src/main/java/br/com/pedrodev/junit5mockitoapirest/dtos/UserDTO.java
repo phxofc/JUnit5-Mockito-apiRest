@@ -9,6 +9,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.http.ResponseEntity;
 
+import java.util.Optional;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,4 +35,12 @@ public class UserDTO {
     }
 
 
+    public UserDTO(Optional<User> result) {
+
+        id = result.get().getId();
+        name = result.get().getName();
+        email = result.get().getEmail();
+        password = result.get().getPassword();
+
+    }
 }

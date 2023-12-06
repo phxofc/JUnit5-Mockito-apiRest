@@ -19,7 +19,7 @@ public class UserService {
 
 
     public UserDTO findById(Long id){
-        User result = userRepository.findById(id).get();
+        Optional<User> result = userRepository.findById(id);
         UserDTO dto = new UserDTO(result);
         return dto;
 
